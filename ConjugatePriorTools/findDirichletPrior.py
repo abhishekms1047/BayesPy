@@ -10,7 +10,7 @@
 # A sample of a file to pipe into this python script is given by test.csv
 
 # ex
-# cat test.csv | ./finaDirichletPrior.py --sampleRate 1
+# cat test.csv | ./findDirichletPrior.py --sampleRate 1
 
 # Paper describing the basic formula:
 # http://research.microsoft.com/en-us/um/people/minka/papers/dirichlet/minka-dirichlet.pdf
