@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>BayesPy Explorer</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script>
+      // Replace with your deployed Heroku app URL
+      window.API_BASE = 'https://YOUR_HEROKU_APP.herokuapp.com';
+    </script>
+</head>
+<body>
+    <h1>BayesPy Data Explorer</h1>
+    <form id="upload-form">
+        <input type="file" id="csv-file" accept=".csv">
+        <button type="submit">Upload</button>
+    </form>
+    <div class="samples">
+        <button type="button" onclick="loadSample('sample1.csv')">Run Sample 1</button>
+        <button type="button" onclick="loadSample('sample2.csv')">Run Sample 2</button>
+    </div>
+    <div id="chart"></div>
+    <script src="script.js"></script>
+</body>
+</html>
