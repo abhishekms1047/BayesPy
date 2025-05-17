@@ -3,7 +3,7 @@ BayesPy
 
 Bayesian Inference Tools in Python
 
-Our goal is, given the discrete outcomes of events, estimate the distribution of categories.  Using gradient descent we can estimate the parameters of a dirchlet prior from past data that can be combined as a conjugate prior with the multinomial distribution to better estimate the likelihood of seeing an event of a given type in the future.
+Our goal is, given the discrete outcomes of events, estimate the distribution of categories.  Using gradient descent we can estimate the parameters of a dirichlet prior from past data that can be combined as a conjugate prior with the multinomial distribution to better estimate the likelihood of seeing an event of a given type in the future.
 
 Conjugate Prior Tools:  The main file is ./findDirichletPrior - you pipe in your counts (given in test.csv as an example) and the maximum-likelihood dirichlet comes out.
 
