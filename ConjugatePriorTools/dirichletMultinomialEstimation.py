@@ -130,7 +130,7 @@ def getPredictedStepAlt(hConst, hDiag, gradient, alphas):
 
 #The priors and data are global, so we don't need to pass them in
 def getTotalLoss(trialPriors, data, Beta = None, W = None):
-  return -1*dirichLogProb(trialPriors, data, Beta = None, W = None)
+  return -1*dirichLogProb(trialPriors, data, Beta, W)
 	
 def predictStepUsingHessian(gradient, priors, data, W = None):
 	totalHConst = priorHessianConst(priors, data, W)
