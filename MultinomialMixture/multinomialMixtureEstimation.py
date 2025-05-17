@@ -101,10 +101,10 @@ class MultinomialMixtureModelHyperparams:
 
 def logProbsToProbabilityDistribution(logProbs):
   highest = max(logProbs)
-  logProbs = map(lambda x: x - highest, logProbs)
-  unnormalized = map(lambda x: math.exp(x), logProbs)
+  logProbs = [x - highest for x in logProbs]
+  unnormalized = [math.exp(x) for x in logProbs]
   S = sum(unnormalized)
-  return map(lambda x: float(x) / S, unnormalized)
+  return [float(x) / S for x in unnormalized]
 
 # Input counts: A K-dimensional count vector for a given row
 # we want to know which component of the mixture model best describes the counts
